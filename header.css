@@ -1,0 +1,74 @@
+header {
+    position: relative;
+    background-image: url('assests/hero.jpg');
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Adjust height as needed */
+    width: 100%; /* Adjust width as needed */
+    color: white; 
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.nav-section {
+  display: flex;
+}
+.nav-section, .hero-section {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+    color: white; 
+}
+nav {
+   justify-content: space-between;
+   border: 2px solid green;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   .nav-section{
+    gap: 1rem;
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+   }
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    padding: 2rem;
+}
+
+/*RESPONSIVE CSS*/
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .mobile-hidden{
+    display: none;
+  }
+  .desktop-hidden {
+    display: block;
+  }
+}
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+    header {
+        height: 100vh; /* Full viewport height on larger screens */
+    }
+    .mobile-hidden {
+      display: block;
+    }
+    .desktop-hidden {
+      display: none;
+    }
+  
+}
