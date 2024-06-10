@@ -7,30 +7,326 @@
     <!-- CSS LINKS-->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header>
-            <nav class="flex">
-                <div class="logo">xys</div>
-                <div class="nav-toggle desktop-hidden">
-                    <button><span class="sr-only">menu</span></button>
-                </div>
-                <ul class="mobile-hidden nav-section">
-                     <a href="#" class="li">Home</a>
-                     <a href="#" class="li">About</a>
-                     <a href="#" class="li">Contact</a>
-                     <a href="#" class="li">Order Now</a>
-                </ul>
-            </nav>
-            <div class="hero-section">
-                <h1>Enjoy Healthy Meals Today</h1>
-                <p>Fresh, nutritious meals delivered to your door in Pretoria. Enjoy balanced eating without stress</p>
-                <button>Order now</button>
-            </div>
+          <nav>
+            <div class="logo">
+              <img src="assests/Fuudie 1 (1).svg" alt="fuudie" width="180px">
+            </div>    
+          <ul data-visible="false" class="primary-navigation mobile-hidden" 
+          id="primary-navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="mobile-nav-toggle desktop-hidden">
+            <span class="sr-only">MENU</span>
+          </button>
+          </nav>
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+          <div class="hero">
+            <div class="hero-text"><h1>Delicious homemade meals delivered to your door</h1>
+            <p>Fuudie offers a wide range of healthy and flavorful meals made with fresh ingredients. Order now and enjoy the convenience of having delicious homemade food delivered straight to your doorstep.</p>
+            <button class="cta">ORDER NOW</button>
+           <!-- ><div class="desktop-hidden leaf-1">
+              <img src="assests/leaf.png" alt="" width="100px">
+            </div>
+            <div class="desktop-hidden leaf-3">
+              <img src="assests/single leave.png" alt="">
+            </div>
+            <div class="desktop-hidden salad">
+              <img src="assests/salad hero.png" alt="">
+            </div>-->
+          </div>
+          </div>
+          <div class="delivery-section flex-group">
+            <div class="delivery-img">
+              <img src="assests/fuudie bag.png" alt="fuudie delivery bag">
+            </div>
+            <div class="delivery-text">
+              <p class="delicious">Delicious</p>
+            <h2>
+              Homemade, Healthy, and Delivered to Your Doorstep
+            </h2>
+            <p>At Fuudie, we pride ourselves on offering homemade, healthy meals that are conveniently delivered to your doorstep. With a focus on quality ingredients and delicious flavors, we aim to provide a satisfying dining experience for our valued customers.</p>
+            <div class="two-cols flex-group">
+              <div class="col-fresh">
+                <img src="assests/fresh food.svg" alt="fresh food" class="freshFood">
+                <div>
+                <h4>Fresh Food</h4>
+                <p>We source the freshest ingredients to create nutritious and flavorful meals for you.</p>
+              </div>
+              </div>
+              <div class="col-delivery">
+                <img src="assests/delivery.svg" alt="delivery scooter" class="delivery">
+                <div>
+                <h4>Convenient Delivery</h4>
+                <p>We deliver our homemade meals right to your doorstep, saving you time and effort.</p>
+              </div>
+              </div>
+            </div>
+            <button class="cta">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="services-section">
+              <p class="delicious">Delicious</p>
+              <h2>SERVICES FOR YOU</h2>
+              <div class="services-options flex">
+                <div class="weekly option">
+                  <h3>Weekly Meals</h3>
+                  <img src="assests/weekly meal.png" alt="">
+                </div>
+                <div class="family option">
+                  <h3>Family-sized portions</h3>
+                  <img src="assests/family sized.png" alt="">
+                </div>
+                <div class="vegan option">
+                  <h3>Vegan options</h3>
+                  <img src="assests/pexels-dbaler-17486827.jpg" alt="">
+                </div>
+                <div class="snacks option">
+                  <h3>SNACK JAR</h3>
+                  <img src="assests/meal jar.jpg" alt="">
+                </div>
+                <div class="smoothies option">
+                  <h3>DELICIOUS SMOOTHIES</h3>
+                  <img src="assests/SMOOTHIES.png" alt="">
+                </div>
+              </div>
+          </div>
+          <div class="meals-gallery">
+            <p class="delicious">Delicious</p>
+            <h2>Meals you'll enjoy</h2>
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="assests/avo and pork.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="assests/likemeat-f96pzsJZpcs-unsplash.jpg" alt="">
+        </div>
+        <div class="swiper-slide"><img src="assests/shrimp.JPG" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="assests/salmon.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="assests/farhad-ibrahimzade-KpOl9jV2aJM-unsplash.jpg" alt="">
+        </div>
+        </div>
+    <div class="swiper-pagination"></div>
+</div>
+        </div>
+        <div class="reviews-section">
+          <p class="delicious">Delicious</p>
+          <h2>Reviews from happy clients</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+             <div class="swiper-slide flex">
+                <img src="assests/client two.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolorum nulla a odit animi nobis quod aliquam similique corporis eaque blanditiis, vitae quasi eius voluptatibus est veniam itaque at doloremque!</p>
+                <p>- Holly K</p>
+             </div>
+            <div class="swiper-slide flex">
+                <img src="assests/client 3.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolorum nulla a odit animi nobis quod aliquam similique corporis eaque blanditiis, vitae quasi eius voluptatibus est veniam itaque at doloremque!</p>
+                <p>- Kim</p>
+            </div>
+            <div class="swiper-slide flex">
+                <img src="assests/client 4.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolorum nulla a odit animi nobis quod aliquam similique corporis eaque blanditiis, vitae quasi eius voluptatibus est veniam itaque at doloremque!</p>
+                <p>- Jay</p>
+            </div>
+            <div class="swiper-slide flex">
+                <img src="assests/client 5.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolorum nulla a odit animi nobis quod aliquam similique corporis eaque blanditiis, vitae quasi eius voluptatibus est veniam itaque at doloremque!</p>
+                <p>- Luu</p>
+            </div>
+            <div class="swiper-slide flex">
+                <img src="assests/client 1.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolorum nulla a odit animi nobis quod aliquam similique corporis eaque blanditiis, vitae quasi eius voluptatibus est veniam itaque at doloremque!</p>
+                <p>- James</p>
+            </div>
+            </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+        </div>
+        <div class="pricing-section bg-img">
+          <p class="delicious">Delicious</p>
+          <h2>Pricing Options</h2>
+          <p>Choose from our flexible pricing plans to suit your needs.</p>
+          <div class="basic-plan plan flex">
+            <img src="assests/pexels-rasul70-17597408.jpg" alt="">
+            <h3>Basic Plan</h3>
+            <p>R2000/month</p>
+            <ul>
+              <li>4 Meals Weekly</li>
+              <li>4 Snacks</li>
+              <li>4 Smoothies</li>
+            </ul>
+           <button class="cta">VIEW MENU</button>
+          </div>
+          <div class="standard-plan plan flex">
+            <img src="assests/breakfast meal.png" alt="">
+            <h3>Standard Plan</h3>
+            <p>R2400/month</p>
+            <ul>
+              <li>6 Meals Weekly</li>
+              <li>6 Snacks</li>
+              <li>6 Smoothies</li>
+            </ul>
+           <button class="cta">VIEW MENU</button>
+          </div>
+          <div class="elite-plan plan flex">
+            <img src="assests/pasta.png" alt="">
+            <h3>Elite Plan</h3>
+            <p>R3000/month</p>
+            <ul>
+              <li>7 Meals Weekly</li>
+              <li>7 Snacks</li>
+              <li>7 Smoothies</li>
+              <li>Personalised Menu</li>
+            </ul>
+           <button class="cta">VIEW MENU</button>
+          </div>
+        </div>
+        <div class="contact-section flex-group">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="message">
+            <button class="cta">SUBMIT</button>
+          </form>
+          </div>
+          <div class="discover">
+            <h3>Discover <span class="deli">delicious</span> homemade meals delivered to your doorstep. Follow us on social media for more information.</h3>
+            <button class="cta">LEARN MORE</button>
+          </div>
+        </div>
+          <div class="faq-section">
+            <p class="delicious">Delicious</p>
+            <h2>FAQ</h2>
+            <p>Find answers to frequently asked questions about Fuudie and our services.</p>
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      What types of meals do you offer?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                     We offer a variety of health meals, including vegetarian, vegan, and protein-rich options, all prepared with fresh ingredients.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Do you cater to specific diets?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      Yes, we cater to various dietary needs like gluten-free, keto, and low-carbs diets to help you stay on track.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      How do I place an order?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      You can place an order through our website. Simply select your meals and choose a delivery schedule.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                       Do you offer delivery?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        Yes, we deliver throughout Pretoria. Our delivery service ensures your meals arrive fresh and ready to eat.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                       Can I customize my meals?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        Absolutely. We offer customizable meal options, so you can choose ingredients that best suit your taste and dietary needs.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        
+        </div>
+        <div class="questions">
+          <h2>Still have a question ?</h2>
+          <p>Contact us for further assistance.</p>
+          <button class="cta">CONTACT US</button>
+        </div>
+        <div class="stayUpdated">
+          <h2>StayUpdated with Fuudie’s <span class="deli">delicious</span> Newsletter</h2>
+          <p>Subscribe to our newsletter and receive updates, meal plans, and special offers.</p>
+          <input type="text" placeholder="email"><button class="cta">Subscribe</button>
+          <p class="small">By subscribing, you agree to our Terms and Conditions.</p>
+        </div>   
+        </main>
+        <footer>
+          <div class="about-company flex-group">
+            <div class="logo">
+              <img src="assests/Fuudie 1 (1).svg" alt="fuudie" width="180px">
+            </div>
+            <ul class="nav-items">
+              <div>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </div>
+            <div>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Menu</a></li>
+            </div>
+            </ul>
+          </div>
+          <div class="ts-cs flex-group">
+            <p>© 2024 Fuudie. All rights reserved.</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookies Settings</p>
+            <div class="social-media flex">
+              <img src="assests/ig.svg" alt="instagram">
+              <img src="assests/tiktok.svg" alt="tiktok">
+              <img src="assests/pinterest.svg" alt="pinterest">
+            </div>
+          </div>
+        </footer>
+
+        <script defer src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
